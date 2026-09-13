@@ -1102,7 +1102,7 @@
         }
     }
 
-    /* guides page */
+     /* guides page */
     .guides_section {
         padding-top: 3rem;
         padding-bottom: 4rem;
@@ -1243,7 +1243,7 @@
             height: 200px;
         }
     }
-
+    
     /* problem and solution page */
     header.topnav {
         position: relative; 
