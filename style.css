@@ -1136,13 +1136,32 @@
         gap: 2rem;
     }
 
-    /* Individual Card Structure */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
     .blog_card {
         display: flex;
-        gap: 1.75rem;
-        align-items: flex-start;
-        padding-bottom: 2rem;
-        border-bottom: 1px solid var(--c-pink);
+        flex-direction: row; 
+        background-color: #ffffff;
+        border-radius: 12px;
+        overflow: hidden; 
+        max-width: 600px;
+        margin: 0 auto 2rem auto;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+    
+    .blog_img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        display: block;
+    }
+    
+
+    .blog_content {
+        padding: 1.5rem;
     }
 
     /* Image Styling */
@@ -1151,16 +1170,7 @@
         width: 240px;
         height: 160px;
     }
-
-    .blog_img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border: 1px solid #e2e8f0;
-        border-radius: 2px;
-    }
-
-    /* Post Content & Pink Accent Elements */
+    
     .blog_content {
         flex-grow: 1;
     }
