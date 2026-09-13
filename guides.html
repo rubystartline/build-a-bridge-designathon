@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Guides | Build a Bridge</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="/script.js" defer></script>
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
 </head>
 
 <body>
      <header class="topnav">
         <div class="wrapper topnav_wrapper">
-            <a href="/" class="topnav_homelink">
-                <img src="/img/build_a_bridge_full_logo.svg" alt="Build a Bear Homepage" class="topnav_logo" width="128" height="36">
+            <a href="index.html" class="topnav_homelink">
+                <img src="img/build_a_bridge_full_logo.svg" alt="Build a Bridge Homepage" class="topnav_logo" width="128" height="36">
             </a>
 
             <button class="topnav_toggle" aria-expanded="false" aria-label="Toggle menu">
@@ -46,62 +46,49 @@
         </div>
     </header>
 
-    <main>
-        
-<main class="guides_section">
-    <div class="page_hero_banner">
-        <img src="/img/guides_banner.jpg" alt="Guides Banner" class="page_hero_img">
-    </div>
-
-    <div class="wrapper">
-        <header class="page_header">
-            <h1>Guides</h1>
-            <p>Step-by-step articles to elevate your career strategy and networking skills.</p>
-        </header>
+    <main class="guides_section">
+        <div class="page_hero_banner">
+            <img src="img/guides_banner.jpg" alt="Guides Banner" class="page_hero_img">
+        </div>
 
         <div class="wrapper">
+            <header class="page_header">
+                <h1>Guides</h1>
+                <p>Step-by-step articles to elevate your career strategy and networking skills.</p>
+            </header>
 
-        <div class="blog_feed">
-            <!-- Article 1 -->
-            <article class="blog_card">
-                <a href="guides/career-fair-pitch.html" class="blog_img_link">
-                    <img src="/img/chidera-faustina-okeke-aMNFii9MWUE-unsplash.jpg" alt="How to Pitch Yourself at Career Fairs" class="blog_img">
-                </a>
-                <div class="blog_content">
-                    <h2 class="blog_title">
-                        <a href="guides/career-fair-pitch.html">How to Pitch Yourself at Career Fairs</a>
-                    </h2>
-                    <p class="blog_excerpt">
-                        Learn the core strategy for introducing yourself confidently to industry recruiters in under 60 seconds.
-                    </p>
-                    <div class="blog_footer">
-                        <span class="blog_author">By Build a Bridge Team</span>
-                        <a href="guides/career-fair-pitch.html" class="blog_btn">Read more »</a>
+            <div class="blog_feed">
+                <!-- Article 1 -->
+                <article class="blog_card">
+                    <img src="img/chidera-faustina-okeke-aMNFii9MWUE-unsplash.jpg" alt="How to Pitch Yourself at Career Fairs" class="blog_img">
+                    <div class="blog_content">
+                        <h2 class="blog_title">How to Pitch Yourself at Career Fairs</h2>
+                        <p class="blog_excerpt">
+                            Learn the core strategy for introducing yourself confidently to industry recruiters in under 60 seconds.
+                        </p>
+                        <div class="blog_footer">
+                            <span class="blog_author">By Build a Bridge Team</span>
+                            <a href="index.html" class="blog_btn">Read more »</a>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
 
-            <!-- Article 2 -->
-            <article class="blog_card">
-                <a href="guides/case-studies.html" class="blog_img_link">
-                    <img src="/img/ninthgrid-wCfWNod54JU-unsplash.jpg" alt="Structuring Case Studies for Impact" class="blog_img">
-                </a>
-                <div class="blog_content">
-                    <h2 class="blog_title">
-                        <a href="guides/case-studies.html">Structuring Case Studies for Impact</a>
-                    </h2>
-                    <p class="blog_excerpt">
-                        Turn your technical or design projects into compelling stories that hiring managers love reading.
-                    </p>
-                    <div class="blog_footer">
-                        <span class="blog_author">By Build a Bridge Team</span>
-                        <a href="guides/case-studies.html" class="blog_btn">Read more »</a>
+                <!-- Article 2 -->
+                <article class="blog_card">
+                    <img src="img/ninthgrid-wCfWNod54JU-unsplash.jpg" alt="Structuring Case Studies for Impact" class="blog_img">
+                    <div class="blog_content">
+                        <h2 class="blog_title">Structuring Case Studies for Impact</h2>
+                        <p class="blog_excerpt">
+                            Turn your technical or design projects into compelling stories that hiring managers love reading.
+                        </p>
+                        <div class="blog_footer">
+                            <span class="blog_author">By Build a Bridge Team</span>
+                            <a href="index.html" class="blog_btn">Read more »</a>
+                        </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
-    </div>
-</main>
     </main>
 
     <footer class="site_footer">
@@ -113,23 +100,21 @@
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
-        const guideCards = document.querySelectorAll('.guide_card');
+            const guideCards = document.querySelectorAll('.guide_card');
 
-        guideCards.forEach(card => {
-            card.addEventListener('click', () => {
-                // Toggles open/close state on click
-                card.classList.toggle('is-open');
+            guideCards.forEach(card => {
+                card.addEventListener('click', () => {
+                    card.classList.toggle('is-open');
 
-                // Updates button text dynamically
-                const toggleBtn = card.querySelector('.guide_toggle_btn');
-                if (card.classList.contains('is-open')) {
-                    toggleBtn.childNodes[0].nodeValue = 'Close Guide ';
-                } else {
-                    toggleBtn.childNodes[0].nodeValue = 'Read Guide ';
-                }
+                    const toggleBtn = card.querySelector('.guide_toggle_btn');
+                    if (card.classList.contains('is-open')) {
+                        toggleBtn.childNodes[0].nodeValue = 'Close Guide ';
+                    } else {
+                        toggleBtn.childNodes[0].nodeValue = 'Read Guide ';
+                    }
+                });
             });
         });
-    });
     </script>
 </body>
 </html>
