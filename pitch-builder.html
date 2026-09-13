@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitch Builder | Build a Bridge</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+    <header class="topnav">
+        <div class="wrapper topnav_wrapper">
+            <a href="/" class="topnav_homelink">
+                <img src="/img/build_a_bridge_full_logo.svg" alt="Build a Bear Homepage" class="topnav_logo" width="128" height="36">
+            </a>
+
+            <button class="topnav_toggle" aria-expanded="false" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="topnav_nav">
+                <ul class="topnav_links">
+                    <li class="topnav_item">
+                        <a href="calendar.html" class="topnav_link link-calendar">EVENTS NEAR YOU</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="pitch-builder.html" class="topnav_link link-pitchbuilder">PITCH BUILDER</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="templates.html" class="topnav_link link-templates">TEMPLATES</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="guides.html" class="topnav_link link-guides">GUIDES</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="problem-solution.html" class="topnav_link link-problemsolution">PROBLEM & SOLUTION</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="pitch_section">
+        <div class="page_hero_banner">
+            <img src="/img/pitch_builder_banner.jpg" alt="Pitch Builder Banner" class="page_hero_img">
+        </div>
+        <header class="pitch_header">
+                <h1>Elevator Pitch Builder</h1>
+                <p>Fill out the fields below to create your customised 30-second networking pitch.</p>
+        </header>
+
+        <section class="pitch-hero">
+        <div class="pitch-container">
+            
+            <!-- Left Column: Explanation -->
+            <div class="pitch-text">
+            <h2>What is an elevator pitch?</h2>
+            <p>An elevator pitch is a brief, 30 to 60 second professional introduction to build connections confidently with new people. It covers who you are, what you do, and why it matters.</p>
+            </div>
+
+            <!-- Right Column: Video Block -->
+            <div class="pitch-video-block">
+            <span class="video-label">Learn more here</span>
+            
+            <div class="video-wrapper">
+                <iframe 
+                src="https://www.youtube.com/embed/rShZQ93Qi0U?si=SkSKSjWYjiLexJyi" 
+                title="Elevator Pitch Sample Video" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+                </iframe>
+            </div>
+
+            <span class="video-credit">Video by Harvard Human Resources</span>
+            </div>
+        </div>
+        </section>
+
+        <div class="wrapper">
+            <div class="pitch_container">
+                <form id="pitchForm" class="pitch_form">
+                    <div class="form_group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" placeholder="e.g., Alex Chen" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="role">Role / Major</label>
+                        <input type="text" id="role" placeholder="e.g., UI/UX Design Student" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="problem">Problem You Solve</label>
+                        <input type="text" id="problem" placeholder="e.g., making mobile apps accessible for seniors" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="impact">Key Skill or Recent Project</label>
+                        <input type="text" id="impact" placeholder="e.g., prototyping user-tested wireframes" required>
+                    </div>
+
+                    <div class="form_group">
+                        <label for="goal">Your Goal / Looking For</label>
+                        <input type="text" id="goal" placeholder="e.g., summer design internships or collaborative mentors" required>
+                    </div>
+                </form>
+
+                <!-- Live Output Side -->
+                <div class="pitch_output_card">
+                    <h3>Your Generated Pitch</h3>
+                    <div class="pitch_box">
+                        <p id="pitchResult">Fill in the fields on the left to watch your elevator pitch generate live!</p>
+                    </div>
+                    <button id="copyBtn" class="pitch_btn">Copy Pitch to Clipboard</button>
+                    <span id="copyFeedback" class="copy_feedback">Copied!</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="site_footer">
+        <div class="wrapper footer_wrapper">
+            <img src="img/build_a_bridge_full_logo_white.svg" alt="Build a Bridge Logo" class="footer_logo">
+            <p class="footer_text">Designed by Jinel Bautista for RIT GDC's DesignAthon 2026</p>
+        </div>
+    </footer>
+
+    <script src="pitch-builder.js"></script>
+</body>
+</html>

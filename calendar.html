@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar | Build a Bridge</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+</head>
+
+<body>
+    <header class="topnav">
+        <div class="wrapper topnav_wrapper">
+            <a href="/" class="topnav_homelink">
+                <img src="/img/build_a_bridge_full_logo.svg" alt="Build a Bear Homepage" class="topnav_logo" width="128" height="36">
+            </a>
+
+            <button class="topnav_toggle" aria-expanded="false" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="topnav_nav">
+                <ul class="topnav_links">
+                    <li class="topnav_item">
+                        <a href="calendar.html" class="topnav_link link-calendar">EVENTS NEAR YOU</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="pitch-builder.html" class="topnav_link link-pitchbuilder">PITCH BUILDER</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="templates.html" class="topnav_link link-templates">TEMPLATES</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="guides.html" class="topnav_link link-guides">GUIDES</a>
+                    </li>
+                    <li class="topnav_item">
+                        <a href="problem-solution.html" class="topnav_link link-problemsolution">PROBLEM & SOLUTION</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+
+    <main class="events_section">
+        <div class="page_hero_banner">
+            <img src="/img/calender_banner.jpg" alt="Calendar Banner" class="page_hero_img">
+        </div>
+
+        <div class="wrapper">
+            <header class="events_header">
+                <h1>Events Near You</h1>
+                <p>Find upcoming designathon workshops, networking mixers, and hackathons across the UAE.</p>
+                <p>* Note: Events displayed are fictional.</p>
+            </header>
+
+            <!-- Filter Controls Box -->
+            <div class="filter_card">
+                <div class="filter_group">
+                    <label for="filterEmirate">Filter by Emirate</label>
+                    <select id="filterEmirate" class="filter_select">
+                        <option value="all">All Emirates</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="abu-dhabi">Abu Dhabi</option>
+                        <option value="sharjah">Sharjah</option>
+                    </select>
+                </div>
+
+                <div class="filter_group">
+                    <label for="filterMajor">Filter by Major / Field</label>
+                    <select id="filterMajor" class="filter_select">
+                        <option value="all">All Majors</option>
+                        <option value="design">UI/UX & Graphic Design</option>
+                        <option value="cs">Computer Science & Dev</option>
+                        <option value="business">Business & Marketing</option>
+                    </select>
+                </div>
+
+                <div class="filter_group">
+                    <label for="filterType">Filter by Event Type</label>
+                    <select id="filterType" class="filter_select">
+                        <option value="all">All Event Types</option>
+                        <option value="workshop">Workshop</option>
+                        <option value="networking">Networking Mixer</option>
+                        <option value="competition">Competition / Hackathon</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Event Cards Grid -->
+            <div class="events_grid" id="eventsGrid">
+                
+                <!-- Event 1 (Dubai) -->
+                <article class="event_card" data-emirate="dubai" data-major="design" data-type="workshop">
+                    <div class="event_date_badge">OCT 24</div>
+                    <div class="event_info">
+                        <span class="event_tag">Workshop • Dubai</span>
+                        <h3>Dubai Knowledge Park UX Portfolio Review</h3>
+                        <p class="event_meta"> Dubai Knowledge Park, Block 11 | 5:00 PM - 7:00 PM</p>
+                        <p class="event_desc">Get direct critique on your UI/UX design prototypes from senior product leads based in Dubai Internet City.</p>
+                        <button class="event_btn">RSVP Now</button>
+                    </div>
+                </article>
+
+                <!-- Event 2 (Dubai) -->
+                <article class="event_card" data-emirate="dubai" data-major="cs" data-type="competition">
+                    <div class="event_date_badge">OCT 28</div>
+                    <div class="event_info">
+                        <span class="event_tag">Hackathon • Dubai</span>
+                        <h3>DIFC Innovation Hub Protothon Sprint</h3>
+                        <p class="event_meta"> DIFC Innovation Hub, Dubai | Starts 10:00 AM</p>
+                        <p class="event_desc">Collaborate with developers and UI designers to build functional smart-city web applications in 24 hours.</p>
+                        <button class="event_btn">RSVP Now</button>
+                    </div>
+                </article>
+
+                <!-- Event 3 (Dubai) -->
+                <article class="event_card" data-emirate="dubai" data-major="business" data-type="networking">
+                    <div class="event_date_badge">NOV 02</div>
+                    <div class="event_info">
+                        <span class="event_tag">Networking • Dubai</span>
+                        <h3>Dubai Design District (d3) Pitch Mixer</h3>
+                        <p class="event_meta"> Dubai Design District (d3), Building 7 | 4:00 PM - 6:00 PM</p>
+                        <p class="event_desc">Connect with creative agency founders, startup mentors, and student designers across the UAE.</p>
+                        <button class="event_btn">RSVP Now</button>
+                    </div>
+                </article>
+
+                <!-- Event 4 (Abu Dhabi) -->
+                <article class="event_card" data-emirate="abu-dhabi" data-major="cs" data-type="competition">
+                    <div class="event_date_badge">NOV 08</div>
+                    <div class="event_info">
+                        <span class="event_tag">Hackathon • Abu Dhabi</span>
+                        <h3>Hub71 Youth Tech Challenge</h3>
+                        <p class="event_meta"> Hub71, Al Maryah Island, Abu Dhabi | 9:00 AM - 5:00 PM</p>
+                        <p class="event_desc">Build AI-driven prototype tools alongside fellow engineering and business students.</p>
+                        <button class="event_btn">RSVP Now</button>
+                    </div>
+                </article>
+
+                <!-- Event 5 (Sharjah) -->
+                <article class="event_card" data-emirate="sharjah" data-major="design" data-type="workshop">
+                    <div class="event_date_badge">NOV 12</div>
+                    <div class="event_info">
+                        <span class="event_tag">Workshop • Sharjah</span>
+                        <h3>Sharjah Research Park Figma Masterclass</h3>
+                        <p class="event_meta"> SRTI Park, Sharjah | 3:30 PM - 5:30 PM</p>
+                        <p class="event_desc">Master responsive component systems and interactive prototyping skills for rapid designathons.</p>
+                        <button class="event_btn">RSVP Now</button>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="site_footer">
+        <div class="wrapper footer_wrapper">
+            <img src="img/build_a_bridge_full_logo_white.svg" alt="Build a Bridge Logo" class="footer_logo">
+            <p class="footer_text">Designed by Jinel Bautista for RIT GDC's DesignAthon 2026</p>
+        </div>
+    </footer>
+
+    <script>
+        const filterEmirate = document.getElementById('filterEmirate');
+        const filterMajor = document.getElementById('filterMajor');
+        const filterType = document.getElementById('filterType');
+        const eventCards = document.querySelectorAll('.event_card');
+
+        function filterEvents() {
+            const selectedEmirate = filterEmirate.value;
+            const selectedMajor = filterMajor.value;
+            const selectedType = filterType.value;
+
+            eventCards.forEach(card => {
+                const cardEmirate = card.getAttribute('data-emirate');
+                const cardMajor = card.getAttribute('data-major');
+                const cardType = card.getAttribute('data-type');
+
+                const matchesEmirate = (selectedEmirate === 'all' || cardEmirate === selectedEmirate);
+                const matchesMajor = (selectedMajor === 'all' || cardMajor === selectedMajor);
+                const matchesType = (selectedType === 'all' || cardType === selectedType);
+
+                if (matchesEmirate && matchesMajor && matchesType) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        filterEmirate.addEventListener('change', filterEvents);
+        filterMajor.addEventListener('change', filterEvents);
+        filterType.addEventListener('change', filterEvents);
+    </script>
+</body>
+</html>
